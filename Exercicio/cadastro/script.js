@@ -55,7 +55,7 @@ document.querySelector('.form').addEventListener('submit', function(evento){
   paragrafo.appendChild(conteudo);
   resultado.appendChild(paragrafo);
   let btn = document.createElement("button");
-  btn.createTextNode("remover");
+  btn.innerHTML = "remover"
   paragrafo.appendChild(btn);
   
   btn.addEventListener('click', function(){

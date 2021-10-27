@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   display: none;
+}
+.show{
+    display: block;
+}
+.box1{
+    background-color: red;
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+}
+.box2{
+    background-color: yellow;
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+}
+button{
+    margin-top: 1rem;
+    width: 10rem;
+}
