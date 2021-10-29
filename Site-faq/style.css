@@ -9,7 +9,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #FFEF78;
 
+}
+.content{
+    border: 1px solid #0a40a3;
+    padding: 4rem;
 }
 .container{
     display: flex;
@@ -32,6 +37,9 @@ body{
     height: 100px;
     background-color: green;
     margin-bottom: 1rem;
+}
+p{
+    font-size: 2rem;
 }
 .btn{
     border: 0;
@@ -66,5 +74,96 @@ body{
 .btn1:hover{
     background-color: #990899;
     color: white;
+}
+/* Toggle  */
+.para{
+    background-color: red;
+    position: absolute;
+    left: -200rem;
+    top: 20rem;
+    transition: 6s linear ;
+    width: 80%;
+}
+.para.active{
+    background-color: white;
+    position: absolute;
+    left: 1rem;
+    top: 20rem;
+    width: 200px;
+    transition: 2s linear ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'poppins';
+    line-height: 1rem; 
+}
+
+.some{
+    width: 9rem;
+    border: none;
+    background: none;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 15rem;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    font-family: 'poppins';
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.some:active{
+    background-color: #fff;
+}
+.para img{
+    width: 100px;
+    padding-bottom: 0.5rem;
+    animation: rotate 4s ease-in-out infinite;
+}
+.para h3{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+.para p{
+    font-size: 0.7rem;
+    text-align: center;
+}
+.para p:nth-child(3){
+  
+    font-size: 0.7rem;
+    margin-left: 10px;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    width: 9.6rem;
+}
+
+.para button{
+    width: 10rem;
+    border: none;
+    background: none;
+    background-color: #FF9300;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.5;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+}
+.para p:nth-child(5):hover{
+    color: #FF9300;
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    0% {
+     transform: rotate(360deg);
+    }
+   
 }
 

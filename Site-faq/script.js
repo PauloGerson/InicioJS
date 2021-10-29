@@ -1,27 +1,37 @@
-let para = document.querySelector(".contM");
+/* let para = document.querySelector(".contM");
 let para1 = document.querySelector(".contm");
 let botao = document.querySelectorAll('.btn');
 
 
 let contador = 0;
-let contador1 = 0;
 para.innerHTML = contador;
 
-[...botao].forEach(btn =>{
+[...botao].forEach(btn =>{ //
   btn.addEventListener('click',function(){
     choice(this.innerHTML)
+    para.innerHTML = contador;
   })
 })
 
 function choice(value){
-  switch(value){
+  value == "+"? contador++ : contador-- ;
+  if(value == "Reset"){
+    contador = 0
+  } */
+ /*  switch(value){
     case "+":
-
+      contador++;
     break;
 
     case "-":
-
-    break;
+      contador--;
+    break; 
 
   }
+}*/
+
+let div = document.querySelector('.para');
+document.querySelector('.some').onclick = () =>{  
+    div.classList.toggle('active')
+
 }
